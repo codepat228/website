@@ -24,7 +24,7 @@
     <!-- celcius->fahrenheit -->
     <label for="celcius">Temperatur in Grad Celcius</label>
     <br>
-    <input value="30" type="number" id="celcius" />
+    <input value="30" type="number" id="celcius" min="0" />
     <button onclick="celcius_zu_fahrenheit()" type="button">berechnen</button>
     <br>
     <p>
@@ -34,7 +34,7 @@
     <!--- fahrenheit->celcius -->
     <label for="fahrenheit">Temperatur in Fahrenheit</label>
     <br>
-    <input value="15" type="number" id="fahrenheit" />
+    <input value="15" type="number" id="fahrenheit" min="0" />
     <button onclick="fahrenheit_zu_celcius()" type="button">berechnen</button>
     <br>
     <p>
@@ -50,12 +50,12 @@
 
     <label for="groesse">Körpergröße</label>
     <br>
-    <input value="1.80" type="number" id="groesse" />
+    <input value="1.80" type="number" id="groesse" min="0" />
     <br>
     <br>
     <label for="gewicht">Gewicht</label>
     <br>
-    <input value="90" type="number" id="gewicht" />
+    <input value="90" type="number" id="gewicht" min="0" />
     <br>
     <br>
     <button onclick="bmi()" type="button">berechnen</button>
