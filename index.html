@@ -2,13 +2,14 @@
 <html>
 
 <body>
+    <a href="https://github.com/codepat228/website" target="_blank">
+        <i data-lucide="github"></i>
+    </a>
     <h1>
-
         Temperatur <i data-lucide="thermometer"></i> Rechner
     </h1>
-
     <label for="celcius">Temperatur in Grad Celcius</label>
-
+    <br>
     <input value="30" type="number" id="celcius" />
     <button onclick="celcius_zu_fahrenheit()" type="button">berechnen</button>
     <br>
@@ -17,7 +18,7 @@
     </p>
     <br>
     <label for="fahrenheit">Temperatur in Fahrenheit</label>
-
+    <br>
     <input value="15" type="number" id="fahrenheit" />
     <button onclick="fahrenheit_zu_celcius()" type="button">berechnen</button>
     <br>
@@ -32,10 +33,12 @@
     </h1>
 
     <label for="groesse">Körpergröße</label>
+    <br>
     <input value="1.80" type="number" id="groesse" />
     <br>
     <br>
     <label for="gewicht">Gewicht</label>
+    <br>
     <input value="90" type="number" id="gewicht" />
     <br>
     <br>
@@ -100,6 +103,7 @@
         border-radius: 5.5px;
         border-color: gray;
         border-width: 2px;
+        font-weight: 700;
     }
 
     button {
@@ -118,7 +122,9 @@
 
     label {
         font-weight: 500;
+        font-size: larger;
     }
+
 
     p {
         font-weight: 500;
@@ -127,6 +133,21 @@
     span {
         font-weight: 600;
         font-style: italic;
+    }
+
+    a {
+        color: grey;
+        border-radius: 10px;
+        border-color: black;
+        border-width: 3px;
+        border-style: solid;
+        padding: 7px;
+        display: inline-flex;
+        justify-content: center;
+        position: absolute;
+        right: 20px;
+        margin-left: auto;
+
     }
 </style>
 
