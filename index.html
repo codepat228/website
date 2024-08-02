@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>
+        Temperatur Rechner
+    </h1>
+
+    <label for="celcius">Temperatur in Grad Celcius</label>
+
+    <input value="30" type="number" id="celcius" />
+    <button onclick="celcius_zu_fahrenheit()" type="button">berechnen</button>
+    <br>
+    <p>
+        Ergebnis:<b> <span id="ergebnis_fahrenheit"></span> </b>
+    </p>
+    <br>
+    <label for="fahrenheit">Temperatur in Fahrenheit </label>
+
+    <input value="15" type="number" id="fahrenheit" />
+    <button onclick="fahrenheit_zu_celcius()" type="button">berechnen</button>
+    <br>
+    <p>
+        Ergebnis: <b> <span id="ergebnis_celcius"></span> </b>
+    </p>
+<br>
+<hr>
+<br>
+    <h1>
+        BMI Rechner
+    </h1>
+
+    <label for="groesse">Körpergröße</label>
+    <input value="1.80" type="number" id="groesse" />
+    <br>
+    <br>
+    <label for="gewicht">Gewicht</label>
+    <input value="90" type="number" id="gewicht" />
+    <br>
+    <br>
+    <button onclick="bmi()" type="button">berechnen</button>
+
+    <p>
+        Ergebnis:<b> <span id="bmi"> </span> </b>
+    </p>
+
+</body>
+
+<script>
+
+    function celcius_zu_fahrenheit() {
+        var celcius = document.getElementById("celcius").value
+        var fahrenheit = celcius * 1.8 + 32
+
+        var ergebnis = document.getElementById("ergebnis_fahrenheit")
+        ergebnis.innerText = fahrenheit
+    }
+
+    function fahrenheit_zu_celcius() {
+
+        var fahrenheit = document.getElementById("fahrenheit").value
+        var celcius = (fahrenheit - 32) / 1.8
+
+
+        var ergebnis = document.getElementById("ergebnis_celcius")
+        ergebnis.innerText = celcius
+    }
+
+    function bmi() {
+
+        var groesse = document.getElementById("groesse").value
+        var gewicht = document.getElementById("gewicht").value
+
+        var bmi = gewicht / (groesse * groesse)
+
+        var ergebnis = document.getElementById("bmi")
+        ergebnis.innerText = bmi
+    }
+</script>
+
+</html>
