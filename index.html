@@ -3,7 +3,8 @@
 
 <body>
     <h1>
-        Temperatur Rechner
+
+        Temperatur <i data-lucide="thermometer"></i> Rechner
     </h1>
 
     <label for="celcius">Temperatur in Grad Celcius</label>
@@ -12,22 +13,22 @@
     <button onclick="celcius_zu_fahrenheit()" type="button">berechnen</button>
     <br>
     <p>
-        Ergebnis:<b> <span id="ergebnis_fahrenheit"></span> </b>
+        Ergebnis: <span id="ergebnis_fahrenheit"></span>
     </p>
     <br>
-    <label for="fahrenheit">Temperatur in Fahrenheit </label>
+    <label for="fahrenheit">Temperatur in Fahrenheit</label>
 
     <input value="15" type="number" id="fahrenheit" />
     <button onclick="fahrenheit_zu_celcius()" type="button">berechnen</button>
     <br>
     <p>
-        Ergebnis: <b> <span id="ergebnis_celcius"></span> </b>
+        Ergebnis:<span id="ergebnis_celcius"></span>
     </p>
-<br>
-<hr>
-<br>
+    <br>
+    <hr>
+    <br>
     <h1>
-        BMI Rechner
+        BMI <i data-lucide="person-standing"></i> Rechner
     </h1>
 
     <label for="groesse">Körpergröße</label>
@@ -41,11 +42,20 @@
     <button onclick="bmi()" type="button">berechnen</button>
 
     <p>
-        Ergebnis:<b> <span id="bmi"> </span> </b>
+        Ergebnis: <span id="bmi"> </span>
     </p>
-
 </body>
-
+<!-- font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+<!--- icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 <script>
 
     function celcius_zu_fahrenheit() {
@@ -77,5 +87,47 @@
         ergebnis.innerText = bmi
     }
 </script>
+<style>
+    * {
+        font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    input {
+        border-radius: 5.5px;
+        border-color: gray;
+        border-width: 2px;
+    }
+
+    button {
+        color: white;
+        font-weight: 500;
+        background-color: black;
+        border-radius: 5.5px;
+        border: none;
+        padding: 4px;
+    }
+
+    h1 {
+        color: black;
+
+    }
+
+    label {
+        font-weight: 500;
+    }
+
+    p {
+        font-weight: 500;
+    }
+
+    span {
+        font-weight: 600;
+        font-style: italic;
+    }
+</style>
 
 </html>
