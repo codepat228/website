@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
 <body>
     <a href="https://github.com/codepat228/website" target="_blank">
         <i data-lucide="github"></i>
@@ -8,6 +18,7 @@
     <h1>
         Temperatur <i data-lucide="thermometer"></i> Rechner
     </h1>
+    <!-- celcius->fahrenheit -->
     <label for="celcius">Temperatur in Grad Celcius</label>
     <br>
     <input value="30" type="number" id="celcius" />
@@ -17,6 +28,7 @@
         Ergebnis: <span id="ergebnis_fahrenheit"></span>
     </p>
     <br>
+    <!--- fahrenheit->celcius -->
     <label for="fahrenheit">Temperatur in Fahrenheit</label>
     <br>
     <input value="15" type="number" id="fahrenheit" />
@@ -28,6 +40,7 @@
     <br>
     <hr>
     <br>
+    <!--- gewicht+groesse->BMI -->
     <h1>
         BMI <i data-lucide="person-standing"></i> Rechner
     </h1>
@@ -48,12 +61,6 @@
         Ergebnis: <span id="bmi"> </span>
     </p>
 </body>
-<!-- font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
 <!--- icons -->
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
@@ -70,17 +77,14 @@
     }
 
     function fahrenheit_zu_celcius() {
-
         var fahrenheit = document.getElementById("fahrenheit").value
         var celcius = (fahrenheit - 32) / 1.8
-
 
         var ergebnis = document.getElementById("ergebnis_celcius")
         ergebnis.innerText = celcius
     }
 
     function bmi() {
-
         var groesse = document.getElementById("groesse").value
         var gewicht = document.getElementById("gewicht").value
 
@@ -117,7 +121,6 @@
 
     h1 {
         color: black;
-
     }
 
     label {
@@ -147,8 +150,6 @@
         position: absolute;
         right: 20px;
         margin-left: auto;
-
     }
 </style>
-
 </html>
