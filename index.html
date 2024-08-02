@@ -9,6 +9,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -66,90 +69,4 @@
 <script>
     lucide.createIcons();
 </script>
-<script>
-
-    function celcius_zu_fahrenheit() {
-        var celcius = document.getElementById("celcius").value
-        var fahrenheit = celcius * 1.8 + 32
-
-        var ergebnis = document.getElementById("ergebnis_fahrenheit")
-        ergebnis.innerText = fahrenheit
-    }
-
-    function fahrenheit_zu_celcius() {
-        var fahrenheit = document.getElementById("fahrenheit").value
-        var celcius = (fahrenheit - 32) / 1.8
-
-        var ergebnis = document.getElementById("ergebnis_celcius")
-        ergebnis.innerText = celcius
-    }
-
-    function bmi() {
-        var groesse = document.getElementById("groesse").value
-        var gewicht = document.getElementById("gewicht").value
-
-        var bmi = gewicht / (groesse * groesse)
-
-        var ergebnis = document.getElementById("bmi")
-        ergebnis.innerText = bmi
-    }
-</script>
-<style>
-    * {
-        font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
-    }
-
-    body {
-        padding: 20px;
-    }
-
-    input {
-        border-radius: 5.5px;
-        border-color: gray;
-        border-width: 2px;
-        font-weight: 700;
-    }
-
-    button {
-        color: white;
-        font-weight: 500;
-        background-color: black;
-        border-radius: 5.5px;
-        border: none;
-        padding: 4px;
-    }
-
-    h1 {
-        color: black;
-    }
-
-    label {
-        font-weight: 500;
-        font-size: larger;
-    }
-
-
-    p {
-        font-weight: 500;
-    }
-
-    span {
-        font-weight: 600;
-        font-style: italic;
-    }
-
-    a {
-        color: grey;
-        border-radius: 10px;
-        border-color: black;
-        border-width: 3px;
-        border-style: solid;
-        padding: 7px;
-        display: inline-flex;
-        justify-content: center;
-        position: absolute;
-        right: 20px;
-        margin-left: auto;
-    }
-</style>
 </html>

@@ -1,0 +1,56 @@
+* {
+    font-family: Roboto, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    padding: 20px;
+}
+
+input {
+    border-radius: 5.5px;
+    border-color: gray;
+    border-width: 2px;
+    font-weight: 700;
+}
+
+button {
+    color: white;
+    font-weight: 500;
+    background-color: black;
+    border-radius: 5.5px;
+    border: none;
+    padding: 4px;
+}
+
+h1 {
+    color: black;
+}
+
+label {
+    font-weight: 500;
+    font-size: larger;
+}
+
+
+p {
+    font-weight: 500;
+}
+
+span {
+    font-weight: 600;
+    font-style: italic;
+}
+
+a {
+    color: grey;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+    padding: 7px;
+    display: inline-flex;
+    justify-content: center;
+    position: absolute;
+    right: 20px;
+    margin-left: auto;
+}
