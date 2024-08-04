@@ -22,7 +22,7 @@
         Temperatur <i data-lucide="thermometer"></i> Rechner
     </h1>
     <!-- celcius->fahrenheit -->
-    <label for="celcius">Temperatur in Grad Celcius</label>
+    <label for="celcius">Fahrenheit in Grad Celcius</label>
     <br>
     <input value="30" type="number" id="celcius" min="0" />
     <button onclick="celcius_zu_fahrenheit()" type="button">berechnen</button>
@@ -32,7 +32,7 @@
     </p>
     <br>
     <!--- fahrenheit->celcius -->
-    <label for="fahrenheit">Temperatur in Fahrenheit</label>
+    <label for="fahrenheit">Grad Celcius in Fahrenheit</label>
     <br>
     <input value="15" type="number" id="fahrenheit" min="0" />
     <button onclick="fahrenheit_zu_celcius()" type="button">berechnen</button>
@@ -59,14 +59,40 @@
     <br>
     <br>
     <button onclick="bmi()" type="button">berechnen</button>
-
     <p>
         Ergebnis: <span id="bmi"> </span>
+    </p>
+    <br>
+    <hr>
+    <br>
+    <!-- geschwindigkeitsrechner -->
+    <h1>
+        Geschwindigkeitsrechner <i data-lucide="gauge"></i>
+    </h1>
+    <label for="meter">Meter</label>
+    <br>
+    <input value="20" type="number" id="meter" min="0" />
+    <br>
+    <br>
+    <label for="sekunden">Sekunden</label>
+    <br>
+    <input value="3" type="number" id="sekunden" min="0" />
+    <br>
+    <br>
+    <button onclick="geschwindigkeit()" type="button">berechnen</button>
+    <p>
+        Ergebnis: <span id="geschwindigkeit"></span>
     </p>
 </body>
 <!--- icons -->
 <script src="https://unpkg.com/lucide@latest"></script>
 <script>
     lucide.createIcons();
+
+
+
+
+
 </script>
+
 </html>

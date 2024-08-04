@@ -23,3 +23,15 @@ function bmi() {
     var ergebnis = document.getElementById("bmi")
     ergebnis.innerText = bmi
 }
+
+function geschwindigkeit() {
+    var meter = document.getElementById("meter").value
+    var sekunden = document.getElementById("sekunden").value
+
+    var geschwindigkeit = meter / sekunden * 3.6
+
+    var ergebnis = document.getElementById("geschwindigkeit")
+    ergebnis.innerText = geschwindigkeit
+}
+
+
