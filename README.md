@@ -1,4 +1,4 @@
-# Temperatur- und BMI-Rechner
+# Temperatur-, BMI- und Geschwindigkeitsrechner
 
 Willkommen zu meinem Temperatur-, BMI-Rechner- und Geschwindigkeitsrechner! Diese Website ermöglicht es Benutzern, Temperaturen zwischen verschiedenen Einheiten umzurechnen, sowie das berechnen von ihren Body-Mass-Index (BMI) und Geschwindigkeiten.
 
